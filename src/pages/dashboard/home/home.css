@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Oswald Bold";
+    src: url('../../../assets/fonts/Oswald-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Oswald ExtraLight";
+    src: url('../../../assets/fonts/Oswald-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Oswald Light";
+    src: url('../../../assets/fonts/Oswald-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Oswald Medium";
+    src: url('../../../assets/fonts/Oswald-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Oswald Regular";
+    src: url('../../../assets/fonts/Oswald-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Oswald SemiBold";
+    src: url('../../../assets/fonts/Oswald-SemiBold.ttf') format('truetype');
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f7;
+}
+
+.Home {
+    height: 100%;
+    width: 100%;
+}
+
+.Header {
+    height: 71.6vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#header-logo {
+    width: 100%;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    font-family: "Oswald Light";
+    letter-spacing: 0.2vw;
+}
+
+.overlay h1 {
+    margin-bottom: 6.3%;
+}
+
+.navbar{
+    width: 100%;
+    background-color:aqua;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
