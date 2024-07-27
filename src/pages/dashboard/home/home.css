@@ -43,7 +43,7 @@ body {
 }
 
 .Header {
-    height: 71.6vh;
+    height: 83.35vh;
     width: 100%;
     position: relative;
     display: flex;
@@ -73,13 +73,59 @@ body {
     margin-bottom: 6.3%;
 }
 
-.navbar{
+.navbar {
     width: 100%;
-    background-color:aqua;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-top: 1vh;
 }
 
 .navbar ul {
     display: flex;
     flex-direction: row;
-    gap: 2%;
+    gap: 1.5%;
+    margin: 0;
+    list-style-type: none;
+    align-items: center;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: "Oswald Light";
+    letter-spacing: 0.08vw;
+}
+
+/* Nastavimo crto pod besedo */
+.navbar li {
+    position: relative;
+}
+
+.navbar li:not(.logo-item)::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar li:not(.logo-item):hover::after {
+    transform: scaleX(1);
+    transform-origin: top;
+}
+
+#navbar-logo {
+    width: 70%;
+}
+
+.Main {
+    margin-top: 8vw;
 }
